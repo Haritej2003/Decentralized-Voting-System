@@ -139,7 +139,7 @@ Follow these steps to set up the project locally:
 1. **Clone the repository**
 
 ```shellscript
-git clone https://github.com/Haritej2003/decentralized-voting-system.git
+git clone https://github.com/Haritej2003/Decentralized-Voting-System.git
 cd decentralized-voting-system
 ```
 
