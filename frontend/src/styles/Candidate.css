@@ -1,0 +1,102 @@
+
+.Candidature {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    
+  }
+  
+  .Candidature:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    /* z-index:0; */
+  }
+  
+  .Candidature h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1565c0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .Candidature table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+   
+  }
+  
+  .Candidature th, .Candidature td {
+    padding: 12px 25px;
+    font-size: 20px;
+  }
+  
+  .Candidature th {
+    font-weight: 600;
+    text-align: left;
+    color: #444444;
+    
+  }
+  
+  .Candidature td {
+    font-weight: 700;
+    text-align: center;
+    color: #007bff;
+    font-size: 25px;
+  }
+  /* .Candidature table tbody tr{
+    padding:10px;
+    background-color: #007bff;
+    width:80%;
+  } */
+
+   .Candidature table tbody tr td button {
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.Candidature table tbody tr td .addCandidate {
+    background-color: #008000; 
+    box-shadow: 0px 4px 6px rgba(0, 128, 0, 0.3);
+   
+}
+
+.Candidature table tbody tr td .addCandidate:hover {
+    background-color: #006400; 
+    box-shadow: 0px 6px 10px rgba(0, 128, 0, 0.5);
+    
+  }
+
+
+.Candidature table tbody tr td .deleteCandidate {
+    background-color: #ff0000; 
+    box-shadow: 0px 4px 6px rgba(255, 0, 0, 0.3);
+}
+
+.Candidature table tbody tr td .deleteCandidate:hover {
+    background-color: #cc0000;
+    box-shadow: 0px 6px 10px rgba(255, 0, 0, 0.5);
+} 
+
+
+

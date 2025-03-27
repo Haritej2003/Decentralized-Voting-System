@@ -1,0 +1,23 @@
+{
+  "name": "blockchain",
+  "version": "1.0.0",
+  "description": "blockchain part",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Haritej",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.5"
+  },
+  "devDependencies": {
+    "@truffle/contract": "^4.6.31",
+    "@types/node": "^22.13.10",
+    "ganache": "^7.9.2",
+    "truffle": "^5.11.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

@@ -1,0 +1,255 @@
+
+.ElectionCount {
+    background: white;
+    border-radius: 15px;
+    padding: 20px 25px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 350px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+  }
+  
+  .ElectionCount:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .ElectionCount h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #1565c0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #007bff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .ElectionCount table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  .ElectionCount  th, .ElectionCount td {
+    padding: 12px 25px;
+    font-size: 20px;
+  }
+  
+  .ElectionCount th {
+    font-weight: 600;
+    text-align: left;
+    color: #444444;
+  }
+  
+  .ElectionCount td {
+    font-weight: 700;
+    text-align: right;
+    color: #007bff;
+  }
+  .ElectionCount .conduct-button{
+    width:90%;
+    margin:1rem 0rem 1rem 0rem;
+    height:2.5rem;
+    color:white;
+    font-size: 15px;
+    border-radius: 5px;
+    border:none;
+    outline:none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background-color: rgb(64, 64, 248);
+    cursor: pointer;
+    transition: background-color 300ms ease;
+    padding:10px;
+  }
+  .ElectionCount .conduct-button:hover{
+    background-color: rgb(5, 5, 113);
+  }
+  
+  /* Modal overlay */
+  .ElectionCount .modal-election {
+    position: fixed; 
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5); 
+    width: 100%;
+    height: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20; 
+    border-radius: 10px;
+    animation: fadeOut 300ms;
+  }
+  @keyframes fadeOut {
+    from{
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    to{
+      opacity: 1;
+      transform: scale(0.5);
+    }
+  }
+  
+  .modal-election .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+    position: relative;
+    min-width: fit-content;
+    min-height:fit-content;
+    
+  }
+  .modal-election .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .modal-election .close-btn:hover {
+    color: red;
+  }
+  
+ 
+/* Title */
+.modal-election .modal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form field container */
+.modal-election .modal-field {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.modal-election .modal-field label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input fields */
+.modal-election .modal-field input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.modal-election .modal-field input:focus {
+  border-color: #007bff;
+}
+
+/* Buttons */
+.modal-election .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-election .close-btn,
+.modal-election .confirm-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.modal-election .close-btn {
+  font-size: 18px;
+  color: #333;
+}
+
+.modal-election .close-btn:hover {
+  background: #bbb;
+}
+
+.modal-election .confirm-btn {
+  background: #007bff;
+  color: white;
+}
+
+.modal-election .confirm-btn:hover {
+  background: #0056b3;
+}
+.error{
+  color:red;
+}
+.modal-Endcontainer{
+  display: flex; 
+position: fixed; 
+top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+padding: 1rem; 
+justify-content: center; 
+align-items: center;
+height:100vh;
+width:100vw; 
+background-color: rgba(0, 0, 0, 0.8); 
+--bg-opacity: 0.5; 
+z-index:20;
+}
+.modal-Endcontainer .modal{
+  overflow: hidden; 
+border-radius: 0.75rem; 
+width: 100%; 
+max-width: 28rem; 
+height: fit-content;
+background-color: #ffffff; 
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+animation : fadeOut 500ms;
+display: flex;
+flex-direction: column;
+
+}
+.modal-Endcontainer .modal .modal-header{
+  padding-top: 1rem;
+padding-bottom: 1rem; 
+padding-left: 1.5rem;
+padding-right: 1.5rem; 
+color: #ffffff; 
+width:100%;
+background-color: #2563EB; 
+}
+.modal-Endcontainer .modal .modal-header h3{
+  font-size: 1.25rem;
+line-height: 1.75rem; 
+font-weight: 600; 
+color:white;
+}
+.modal-Endcontainer .modal .confirm-endButton{
+  background-color: #2563EB; 
+  transition-property: background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration:300ms;
+  border:none;
+  outline: none;
+  cursor: pointer;
+  float:left;
+}
+.modal-Endcontainer .modal .confirm-endButton:hover{
+  background-color: #031b59; 
+}

@@ -1,0 +1,11 @@
+{
+  "name": "major-project",
+  "version": "1.0.0",
+  "description": "This project is a decentralized voting system using blockchain",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,250 @@
+/* Signup Page Layout */
+body{
+    margin:0;
+    padding:0;
+
+}
+.signup-page {
+    height: 100%;
+    background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    padding-bottom:7px;
+}
+
+.signup-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding-bottom:1rem;
+}
+
+/* Form Container */
+.signup-form-container {
+    padding: 1.2rem 3rem 0rem 3rem;
+}
+
+.signup-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.signup-logo {
+    color: #2563eb;
+    /* margin-bottom: 1rem; */
+}
+
+.signup-header h2 {
+    font-size: 2rem;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.signup-header p {
+    color: #6b7280;
+}
+
+/* Form Styles */
+.signup-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #374151;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group input.error {
+    border-color: #ef4444;
+}
+
+.error-message {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #ef4444;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.role-select {
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Button Styles */
+.signup-button {
+    width: 100%;
+    padding: 0.875rem;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-button:hover {
+    background: #1d4ed8;
+}
+
+.signup-button:disabled {
+    background: #93c5fd;
+    cursor: not-allowed;
+}
+
+/* Message Styles */
+.message {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.message.success {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.message.error {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+/* Login Link */
+.login-link {
+    text-align: center;
+    margin-top: 1.5rem;
+    color: #6b7280;
+}
+
+.login-link a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Info Section */
+.signup-info {
+    background: #f8fafc;
+    padding: 7rem 3rem 0rem 3rem;
+    border-left: 1px solid #e5e7eb;
+}
+
+.info-section {
+    margin-bottom: 2rem;
+}
+
+.info-section:last-child {
+    margin-bottom: 0;
+}
+
+.info-section h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1f2937;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.info-section ul,
+.info-section ol {
+    list-style: none;
+    padding: 0;
+}
+
+.info-section li {
+    margin-bottom: 0.75rem;
+    color: #4b5563;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.info-section ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+}
+
+.info-section ol {
+    counter-reset: step-counter;
+}
+
+.info-section ol li {
+    counter-increment: step-counter;
+}
+
+.info-section ol li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .signup-container {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .signup-info {
+        border-left: none;
+        border-top: 1px solid #e5e7eb;
+    }
+}
+
+@media (max-width: 640px) {
+    .signup-page {
+        padding: 1rem;
+    }
+
+    .signup-form-container,
+    .signup-info {
+        padding: 2rem;
+    }
+
+    .signup-header h2 {
+        font-size: 1.75rem;
+    }
+}
