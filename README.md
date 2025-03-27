@@ -211,9 +211,11 @@ contractAddress="your-deployed-contract-address"
 ## 📝 Usage
 
 1. **Start the Blockchain Network**
+```shellscript
 truffle compile
 truffle migrate
 copy the contractAdress and store in .env
+```
 
 2. **Start the backend server**
 
